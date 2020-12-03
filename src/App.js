@@ -19,7 +19,7 @@ function App() {
       })
       .then(({ data: { current } = {} }) => setWeatherData(current))
       .catch((err) => console.log(err));
-  }, [search]);
+  }, [search, url]);
 
   return (
     <div className="app">
